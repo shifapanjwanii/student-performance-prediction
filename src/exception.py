@@ -1,4 +1,5 @@
 import sys
+from src.logger import logging
 
 # whenever an exception is raised, it'll push a custom message
 # error_detail present in sys
@@ -19,3 +20,4 @@ class CustomException(Exception):
      
     def __str__(self):
         return self.error_message
+    
